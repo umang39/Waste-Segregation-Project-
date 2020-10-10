@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+  
+</head>
+
+<body>
+  <div style="width:100%;height:400px;">
+ <div class="login">
+  <h1>Predict Waste Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    
+    <div>
+      {{ status }}
+    </div>    
+    
+    <form action="{{ url_for('upload')}}"method="post" enctype="multipart/form-data">
+      
+        <input type="file" name="myImage" required>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Upload Image</button>
+    </form>
+
+   <br>
+   <br>
+
+
+ </div>
+</div>
+
+    <div>
+       <img src="{{ user_image }}" style="width:400px;" alt="User Image">
+    </div>
+
+
+</body>
+</html>
