@@ -8,3 +8,11 @@
     |_Templates
     |    |_index.html This file contain our html codes.
     |_app.py   main file of our project from where our project get started. 
+
+## Technology
+  Frontend : HTML,CSS,Javascript
+  API : flask api
+  ML Techniques : neuro network analysis,deep learning,cnn arcitecture
+
+## Command 
+ $ python app.py
